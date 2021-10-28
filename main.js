@@ -18,7 +18,7 @@ function load_img(){
 		hole_obj.set({
 			top:hole_y,
 			left:hole_x
-		})
+		});
 		canvas.add(hole.obj);
 	});
 	new_image();
@@ -26,7 +26,7 @@ function load_img(){
 
 function new_image()
 {
-	// write code to Upload ball image on canvas
+	// write code to upload ball image on canvas
 	fabric.Image.fromURL("ball.png", (Img) => {
 		ball_obj = Img;
 		ball_obj.scaleToWidth(50);
@@ -36,7 +36,7 @@ function new_image()
 			left:ball_x,
 		});
 		canvas.add("ball_obj");
-	})
+	});
 }
 
 window.addEventListener("keydown", my_keydown);
@@ -116,5 +116,5 @@ function my_keydown(e)
 			console.log(`"When left arrow key is pressed, x = ${ball_x} and y = ${ball_y}"`);
 		}
 	}
-	
 	}
+}
