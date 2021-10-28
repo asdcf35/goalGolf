@@ -20,7 +20,7 @@ function load_img(){
 			left:hole_x
 		})
 		canvas.add(hole.obj);
-	})
+	});
 	new_image();
 }
 
@@ -34,7 +34,7 @@ function new_image()
 		ball_obj.set({
 			top:ball_y,
 			left:ball_x,
-		})
+		});
 		canvas.add("ball_obj");
 	})
 }
@@ -117,4 +117,4 @@ function my_keydown(e)
 		}
 	}
 	
-
+	}
